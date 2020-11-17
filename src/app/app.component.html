@@ -1,0 +1,15 @@
+
+<div>
+  <nav class="navbar navbar-expand navbar-light bg-light">
+    <a class="navbar-brand">{{title}}</a>
+    <ul class="nav nav-pills">
+      <li><a class="nav-link" [routerLink]="['/welcome']">Home</a></li>
+      <li><a class="nav-link" [routerLink]="['/products']">Product List</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h1 class="text-center m-5">{{title}}</h1>
+<!--    <pm-products></pm-products>-->
+    <router-outlet></router-outlet>
+  </div>
+</div>
